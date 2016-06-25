@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Header -->
+	<title>Linear</title>
+	<script src="linear.js"></script>
+</head>
+
+<body onload="main_dl_example_Radio();">
+	<canvas id="canva" width=1200 height=270 style="border: 1px solid #000000"></canvas><br>
+	
+	<input type="radio" id="hold_left" name="pic" /> Закрепить слева
+	
+	<input type="radio" id="hold_right" name="pic" /> Закрепить справа
+	
+	<input type="radio" id="hold_both" name="pic" /> Закрепить с двух сторон
+	
+	<input type="radio" id="free_both" name="pic" /> Открепить<br>
+
+    Количество частиц: <input type="number" id = "Quantity" min=3 max=1000 value=10 style="width: 50px">
+    Выбрать частицу: <input type="number" id = "Number" min=3 max=1000 value=3 style="width: 50px">
+    Задать ей скорость: <input type="number" id = "Speed" min=-10 max=10 value=0 style="width: 50px">
+    Задать ей смещение: <input type="number" id = "u" min=-180 max=180 value=30 style="width: 50px">  
+    С шагом: <input type="number" id = "Step" min=0 max=100 value=0.04 style="width: 50px">*T0 
+
+
+    <input type="button" id = "New" value = "Начать заново"/><br>
+
+    Амплитуда скорости: <input type="number" id = "Middle" min=0 max=10 value=1 style="width: 50px">
+	<input type="button" id = "Rand" value = "Случайные скорости"/><br>
+	
+	
+	График смещений<br>
+	<canvas id="canva_u" width=1200 height=300 style="border: 1px solid #000000"></canvas><br>
+	График энергий(красным - кинетическая, зеленым - потенциальная)<br>
+	<canvas id="canva_energy" width=1200 height=300 style="border: 1px solid #000000"></canvas><br>
+	
+
+    
+</body>
+</html>
